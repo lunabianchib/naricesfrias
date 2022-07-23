@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luna Bianchi Borches">
+    <meta name="description" content="Ropa para tus amigos caninos Narices Frías. Accesorios para mascotas hecho en Argentina. Descubrí todas las prendas que tenemos para vestir a tu mascota en nuestro pet shop online!">
+    <meta name="copyright" content="Narices Frías">
+    <meta name="keywords" content="ecommerce, e-commerce, negocio, tienda, online, market, marca, mascotas, perros, gatos, ropa para perros, canina, accesorios para mascotas, petshop, pet shop, indumentaria para mascotas">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css" title="Estilos" lang="CSS">
+    <script type="text/javascript" href="https://kit.fontawesome.com/a076d05399.js" lang="javascript"></script>
+    <title>Narices Frías</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+
+    <!-- JS Personalizados -->
+    <script type="text/javascript" href="app/app.js" lang="javascript"></script>
+    <script type="text/javascript" href="app/validaciones.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/add-product-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/all-product-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/edit-product-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/form-submited-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/login-error-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/product-detail-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/products-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/search-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="controllers/users-controller.js" lang="javascript"></script>
+    <script type="text/javascript" href="app/main.js" lang="javascript"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo"> Narices Frías
+                <img src="img/Logo.svg" alt="Logo" title="Logo" width="40.82px" height="29.17px">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">
+                            <i class="bi bi-house nav-icon"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#categories" class="nav-link">
+                            <i class="nav-icon fas fa-bars"></i>
+                            Categorías
+                        </a>
+                    </li>
+                    <li><a href="screens/como-medir-a-tu-mascota.html">Cómo medir a tus Mascotas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="flexsearch">
+                <div class="flexsearch--wrapper">
+                    <form class="flexsearch--form" action="#" method="post">
+                        <input class="flexsearch--search" type="search" placeholder="¿Qué deseas buscar?">
+                        <i class="bi bi-search"></i>
+                    </form>
+                </div>
+                <div class="button-login">
+                    <button type="button" id="button-login" class="button-login" title="Login">
+                        <a href="screens/login.html" title="Login">Login</a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cambiar a modo oscuro| modo claro -->
+            <div class="nav-btn">
+                <i class="bi bi-moon dark-mode" id="dark-button"></i>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!--INICIO-->
+        <section class="inicio-section" id="inicio">
+            <div class="inicio-container container grid">
+                <div class="inicio-content grid">
+                    <div class="inicio-social">
+                        <link rel="https://linkedin.com/in/luna-bianchi-borches-005801205/" target="_blank" title="Linkedin" class="inicio-social-icon">
+                            <i class="bi bi-linkedin"></i>
+                        <link rel="https://github.com/lunabianchib" title="github" target="_blank" class="inicio-social-icon">
+                            <i class="bi bi-github"></i>
+                        <link rel="https://www.instagram.com/luna_bianchib/" title="Instagram" target="_blank" class="inicio-social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="inicio-data">
+                <h1 class="inicio-title"></h1>
+                <h3 class="inicio-subtitle"></h3>
+                <p class="inicio-description"></p>
+            </div>
+        </section>
+        <!-- Banner -->
+        <section class="banner-section" id="banner">
+            <div class="banner-image"></div>
+            <div class="banner-text">
+                <h2 class="banner-title">La Mejor Calidad de Ropa para tus Mascotas</h2>
+                <h3 class="banner-subtitle">Se encuentra aquí, al mejor precio.</h3>
+                <div class="banner-button">
+                    <a href="#categories" class="button">Ver Categorias</a>
+                </div>
+            </div>
+        </section>
+        <!-- Productos -->
+        <section class="products-container container grid" id="">
+            <div class="products-text">
+                <h2 class="products-title">Accesorios</h2>
+                <a href="screens/productos.html">Ver todo
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="products-card grid">
+                <div>
+                    <img src="img/gatito-gorra.jpg" alt="Gorra Gatito" title="Gatito Gorra" height="174px" width="176px">
+                    <h3 class="cards-title">Gorra Orejas Gatito</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                        <img src="img/dog-gorra-iguana.jpg" alt="Gorra Iguana" title="Gorra Iguana" height="174px" width="176px">
+                        <h3 class="cards-title">Gorra Iguana</h3>
+                        <span class="cards-price">$60.00</span>
+                        <p class="cards-description"></p>
+                        <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                    </div>
+                <div>
+                    <img src="img/rosita-y-negro.jpg" alt="Bufanda Rosita" title="Bufanda Rosita" height="174px" width="176px">
+                    <h3 class="cards-title">Bufanda Rosita</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+            </div>
+        </section>
+        <section class="products-container container grid" id="">
+            <div class="products-text">
+                <h2 class="products-title">Ropita</h2>
+                <a href="screens/productos.html">Ver todo
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="products-card grid">
+                <div>
+                    <img src="img/fashion-cat-sport.jpg" alt="Gatito Sport" title="Gatito Fashion Sport" width="176px" height="174px">
+                    <h3 class="cards-title">Fashion Cat Sport</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/beauty.jpg" alt="" title="" width="176px" height="174px">
+                    <h3 class="cards-title"></h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/buzitos.jpg" alt="dos perros con buzos deportivos" title="Buzo Deportivo" width="176px" height="174px">
+                    <h3 class="cards-title">Buzo Deportivo</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/fashion-dog.jpg" alt="Fashion Dog" title="Fashion Dog" width="176px" height="174px">
+                    <h3 class="cards-title">Fashion Dog</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/dog-frances.jpg" alt="Dog Francés" title="Dog Francés" width="176px" height="174px">
+                    <h3 class="cards-title">Dog Francés</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/gato-badbunny.jpg" alt="Gatito BadBunny" title="Gatito BadBunny" width="176px" height="174px">
+                    <h3 class="cards-title">Gatito BadBunny</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+            </div>
+        </section>
+        <section class="products-container container grid" id="">
+            <div class="products-text">
+                <h2 class="products-title">Diverso</h2>
+                <a href="screens/productos.html">Ver todo
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="products-card grid">
+                <div>
+                    <img src="img/disfraz.jpg" alt="Disfraz Dog" title="Disfraz Dog" width="176px" height="174px">
+                    <h3 class="cards-title">Disfraz</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/jardin-dog.jpg" alt="Student's Dogs" title="Student's Dogs" width="176px" height="174px">
+                    <h3 class="cards-title">Student's Dogs</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/pijama.jpg" alt="Pijama Dog" title="Pijama Dog" width="176px" height="174px">
+                    <h3 class="cards-title">Pijama Dog</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/princesa.jpg" alt="Princesa Dog" title="Princesa Dog" width="176px" height="174px">
+                    <h3 class="cards-title">Princesa Dog</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/peluche-jirafa.jpg" alt="Peluche Jirafa" title="Peluche Jirafa" width="176px" height="174px">
+                    <h3 class="cards-title">Peluche Jirafa</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+                <div>
+                    <img src="img/trajedelluvia.jpg" alt="Protector de Lluvia" title="Protector de Lluvia" width="176px" height="174px">
+                    <h3 class="cards-title">Piloto de Lluvia</h3>
+                    <span class="cards-price">$60.00</span>
+                    <p class="cards-description"></p>
+                    <a class="products-cards-view" href="" method="post" data-id="">Ver Producto</a>
+                </div>
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section class="contacto-section" id="contacto">
+            <div class="contact-container container grid">
+                <div class="contact-links">
+                    <a class="contacts-links-logo" href="#header" title="Contact">
+                        <img src="" alt="" title="">
+                    </a>
+                    <ul>
+                        <li> <a href="">Quienes Somos</a></li>
+                        <li> <a href="">Politica de privacidad</a></li>
+                        <li> <a href="">Atención al Cliente</a></li>
+                        <li> <a href="">Cambios y Devoluciones</a></li>
+                        <li> <a href="">Mi Cuenta</a></li>
+                    </ul>
+                </div>
+            </div>
+            <form action class="contact-form">
+                <fieldset>
+                    <legend>Contactenos</legend>
+                    <label for="name" class="">Escriba su nombre</label>
+                    <input id="name" type="text" class data-type="contact" placeholder="Nombre">
+                    <span role="alert"></span>
+                    <label for="message" class="">Escriba su mensaje</label>
+                    <textarea name id="message" class data-type="contact" placeholder="Escriba su Mensaje"></textarea>
+                    <span role="alert"></span>
+                    <button type="submit" class="button">Enviar Mensaje</button>
+                </fieldset>
+            </form>
+        </section>
+    <footer class="footer">
+        <a href="https://lunabianchib.github.io" target="_blank" aria-labelledby="portfolio" rel="noopener">
+            <i class="icon-logo"></i>
+            <p id="portfolio">
+                <h4>Desarrollado por Luna Bianchi Borches | 2022. Todos los derechos reservados.</h4>
+                <span class="">Ver Portfolio</span>
+            </p>
+        </a>
+    </footer>
+</body>
+</html>
